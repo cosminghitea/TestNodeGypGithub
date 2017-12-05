@@ -6,14 +6,14 @@
     "author": "Cosmin Ghitea <cosminghitea>",
     "repository": {
         "type": "git",
-        "url": "https://github.com/cosminghitea/TranxGAT.git"
+        "url": "git://github.com/cosminghitea/TestNodeGypGithub.git"
     },
     "binary": {
         "module_name": "binding",
         "module_path": "./lib/binding/{configuration}/{node_abi}-{platform}-{arch}/",
         "remote_path": "./{module_name}/v{version}/{configuration}/",
         "package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}.tar.gz",
-        "host": "https://github.com/cosminghitea/TranxGAT/releases/download/"
+        "host": "https://github.com/cosminghitea/TestNodeGypGithub/releases/download/"
     },
     "dependencies": {
         "nan": "2.x",
