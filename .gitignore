@@ -34,10 +34,8 @@ modify.ldif
 *.gypi
 *.mk
 *.Makefile
-#**/Release/*
+**/Release/*
 ./.vscode/
 ./build/**
 .vscode/settings.json
-build/Release/*
-lib/*
-build/*.*
+build/*
