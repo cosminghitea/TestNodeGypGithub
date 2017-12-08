@@ -29,5 +29,7 @@
     },
     "scripts": {
         "install": "node-pre-gyp install --fallback-to-build",
+        "package": "node-pre-gyp package",
+        "prepublish": "node-pre-gyp-github publish"
     }
 }
