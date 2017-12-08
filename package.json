@@ -29,8 +29,6 @@
     },
     "scripts": {
         "install": "node-pre-gyp install --fallback-to-build",
-        "package": "node-pre-gyp package",
-        "setEnv": "set NODE_PRE_GYP_GITHUB_TOKEN=05f4908ecfe4677f3105673e157e0ddf354822a6"
-        "prepublish": "node-pre-gyp-github publish"
+        "package": "node-pre-gyp package"
     }
 }
