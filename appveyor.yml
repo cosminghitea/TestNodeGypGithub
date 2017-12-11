@@ -22,6 +22,8 @@ install:
   - node -e "console.log(process.arch);"
   - IF /I "%PLATFORM%" == "x64" set PATH=C:\Python27-x64;%PATH%
   - npm install
+  - npm run package
+  - npm test
 
 build: off
 test: off
