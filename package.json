@@ -1,6 +1,6 @@
 {
     "name": "TestNodeGypGithub",
-    "version": "0.0.3",
+    "version": "0.0.1",
     "description": "Hello world app packaged with node-pre-gyp",
     "main": "./index.js",
     "author": "Cosmin Ghitea <cosminghitea>",
@@ -11,7 +11,7 @@
     "binary": {
         "module_name": "binding",
         "module_path": "./lib/binding/{configuration}/{node_abi}-{platform}-{arch}/",
-        "package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}.tar.gz",
+        "package_name": "{module_name}-v{version}-{platform}-{arch}.tar.gz",
         "host": "https://github.com/cosminghitea/TestNodeGypGithub/releases/download/",
         "remote_path": "{version}"
     },
