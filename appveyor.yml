@@ -15,9 +15,8 @@ install:
   - ps: Set-ExecutionPolicy Unrestricted -Scope CurrentUser -Force
   - npm config get
   
-  - IF "%nodejs_version:~0,1%"=="0" npm install https://github.com/springmeyer/node-gyp/tarball/v3.x
-  - IF "%nodejs_version:~0,1%"=="4" npm install node-gyp@3.x
-  - npm install npm@2.x -g
+  - npm install node-gyp -g
+  - npm install npm -g
   - node --version
   - npm --version
   - node -e "console.log(process.arch);"

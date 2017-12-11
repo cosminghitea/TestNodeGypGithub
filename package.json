@@ -1,6 +1,6 @@
 {
     "name": "TestNodeGypGithub",
-    "version": "0.0.4",
+    "version": "0.0.3",
     "description": "Hello world app packaged with node-pre-gyp",
     "main": "./index.js",
     "author": "Cosmin Ghitea <cosminghitea>",
@@ -17,8 +17,11 @@
     },
     "dependencies": {
         "github": "^0.2.4",
+        "istanbul": "^0.4.5",
+        "mocha": "^4.0.1",
         "nan": "2.x",
-        "node-pre-gyp": "0.6.x"
+        "node-pre-gyp": "0.6.x",
+        "should": "^13.1.3"
     },
     "bundledDependencies": [
         "node-pre-gyp"
@@ -28,7 +31,8 @@
         "node-pre-gyp-github": "^1.3.1"
     },
     "scripts": {
-        "install": "node-pre-gyp install --fallback-to-build",
+        "install": "node-pre-gyp install --fallback-to-build && npm run package",
+        "test": "istanbul test \"./node_modules/mocha/bin/_mocha\" ./test/*.js",
         "package": "node-pre-gyp package"
     }
 }
